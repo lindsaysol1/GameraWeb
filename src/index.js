@@ -8,6 +8,8 @@ import {
 } from "react-router-dom";
 import App from './App';
 import Empresas from './pages/empresas';
+import Personas from './pages/personas';
+import Portafolio from './pages/portafolio';
 import Navbar from './components/Navbar';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
@@ -18,6 +20,8 @@ render(
     <Routes>
       <Route path="/" element={<App />} />
       <Route path="empresas" element={<Empresas />} />
+      <Route path="personas" element={<Personas />} />
+      <Route path="portafolio" element={<Portafolio />} />
     </Routes>
   </BrowserRouter>,
   rootElement
