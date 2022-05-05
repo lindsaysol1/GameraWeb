@@ -8,26 +8,22 @@ import Container from "react-bootstrap/Container";
 
 const Footer = () => {
   return (
-    <Container>
-      <Row>
-      <Col sm={1}>&nbsp;</Col>
-        <Col sm={8}>
-      
-        <img src={logo} alt="" className="logo-g"/>
-        <ul>Para solicitar asesoría o para cualquier información adicional, no dude en contactarnos.</ul>
-          <ul> (+57) 301 212 8137 </ul>
-          <ul>info@gameratys.com </ul>
-          <ul>Bogotá, Colombia </ul>
-        
-        </Col>
-        <Col  sm={2}>
-        
-                <ul >Inicio</ul>
-                <ul>Empresas</ul>
-                <ul>Personas</ul>
-                <ul>Portafolio</ul>
-      
-        </Col>
+    <Container className="footer">
+      <Row >
+        <Col sm={1}>&nbsp;</Col>
+          <Col sm={8} className="text">
+            <img src={logo} alt="" className="logo-g"/>
+            <ol>Para solicitar asesoría o para cualquier información adicional, no dude en contactarnos.</ol>
+            <ol> (+57) 301 212 8137 </ol>
+            <ol>info@gameratys.com </ol>
+            <ol>Bogotá, Colombia </ol>
+          </Col>
+          <Col  sm={2} className="text2">
+            <ol >Inicio</ol>
+            <ol>Empresas</ol>
+            <ol>Personas</ol>
+            <ol>Portafolio</ol>
+          </Col>
         <Col sm={1}>&nbsp;</Col>
       </Row>
   </Container>
